@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: 0 -5px;
+
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}

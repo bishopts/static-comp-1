@@ -1,0 +1,36 @@
+.site-nav {
+
+  @media screen and (max-width: 870px) {
+    display: none;
+  }
+}
+
+.site-nav__item {
+  display: inline-block;
+
+  &:hover * {
+    color: $white;
+  }
+
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.site-nav__icon {
+  margin-right: 0.5rem;
+
+  color: $primary500;
+}
+
+.site-nav__icon--active {
+  color: $white;
+}
+
+.site-nav__link {
+  text-transform: uppercase;
+}
+
+.site-nav__link--active {
+  color: $white;
+}

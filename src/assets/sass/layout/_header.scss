@@ -1,0 +1,34 @@
+.header {
+  margin-bottom: 6rem;
+  padding: 1rem 2rem;
+
+  color: $gray300;
+  background-color: $gray950;
+
+  @media screen and (max-width: 870px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.header__top {
+  display: flex;
+
+  margin-bottom: 1rem;
+
+  justify-content: flex-end;
+
+  @media screen and (max-width: 870px) {
+    display: none;
+  }
+}
+
+.header__bottom {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__logo-link-ctnr {
+  line-height: 0.7;
+}

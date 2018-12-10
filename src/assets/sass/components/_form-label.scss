@@ -1,0 +1,13 @@
+.form-label {
+  font-weight: $bold;
+
+  display: block;
+}
+
+.form-label__body {
+  font-weight: $regular;
+
+  display: inline-block;
+
+  margin-left: 0.5rem;
+}

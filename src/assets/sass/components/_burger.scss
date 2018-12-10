@@ -1,0 +1,11 @@
+.burger {
+  display: block;
+
+  @media screen and (min-width: 871px) {
+    display: none;
+  }
+}
+
+.burger__icon {
+  font-size: 2rem;
+}

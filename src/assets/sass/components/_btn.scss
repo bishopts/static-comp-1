@@ -1,0 +1,43 @@
+.btn {
+  font-size: 11px;
+  font-weight: $bold;
+  line-height: 38px;
+
+  display: inline-block;
+
+  height: 38px;
+  padding: 0 30px;
+
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  color: $on-surface;
+  border: 1px solid $gray500;
+  border-radius: 4px;
+  background-color: transparent;
+
+
+  &:hover,
+  &:focus {
+    color: $on-surface;
+    border-color: $gray800;
+    outline: 0;
+  }
+}
+
+.btn--primary {
+  color: $white;
+  border-color: $primary500;
+  background-color: $primary500;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    border-color: $primary700;
+    background-color: $primary700;
+  }
+}

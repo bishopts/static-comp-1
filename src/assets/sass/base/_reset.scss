@@ -1,0 +1,174 @@
+// =============================================================================
+//
+// RESET.SCSS
+// ~~~ Personalized reset styles that sit on top of normalize.css ~~~
+//
+// =============================================================================
+
+
+// =============================================================================
+// Document
+// =============================================================================
+
+
+// 1. Browsers will account for border and padding when calculating box sizes by
+//    default.
+// 2. Turn off default background image tiling
+//
+// See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice;
+
+html {
+  box-sizing: border-box; // 1 //
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit; // 1 //
+  background-repeat: no-repeat; // 2 //
+}
+
+// 1. Add text decoration inheritance in all browsers
+// 2. Add vertical alignment inheritance in all browsers
+
+::before,
+::after {
+  text-decoration: inherit; // 1 //
+  vertical-align: inherit; // 2 //
+}
+
+
+// =============================================================================
+// Sections, Grouping, Text
+// =============================================================================
+
+
+// Stretches the height of the body to always at least fill the viewport.
+body {
+  min-height: 100vh;
+}
+
+// Remove dotted outline when link is active 
+// See: https://css-tricks.com/removing-the-dotted-outline/
+
+a {
+  outline: 0;
+}
+
+// Remove text-shadow in selection highlight
+// https://twitter.com/miketaylr/status/12228805301
+//
+// Vendor-prefixed and regular ::selection selectors cannot be combined:
+// https://stackoverflow.com/a/16982510/7133471
+
+::-moz-selection {
+    text-shadow: none;
+}
+
+::selection {
+    text-shadow: none;
+}
+
+
+// =============================================================================
+// Embedded Content
+// =============================================================================
+
+
+// 1. Images will fit container
+// 2. Set images to block and forget about it. On the rare occasion you need
+//    them to be inline just write an exception. Do note that they can't be
+//    centered with `text-align` now.
+
+img {
+  max-width: 100%; // 1 //
+  display: block; // 2 //
+}
+
+// Add the correct display in IE 9-.
+audio,
+video {
+  display: inline-block;
+}
+
+// Add the correct display in iOS 4-7.
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+// Hide the overflow in IE.
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+// =============================================================================
+// Tabular Data
+// =============================================================================
+
+
+// Collapse border spacing in all browsers (opinionated).
+table {
+  border-collapse: collapse;
+}
+
+
+// =============================================================================
+// Forms
+// =============================================================================
+
+
+// Inherit styling in all browsers.
+button,
+input,
+select,
+textarea {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Add the correct display in Edge and IE.
+progress {
+  display: inline-block;
+}
+
+// Allow only vertical resizing of textareas
+textarea {
+  resize: vertical;
+}
+
+// Correct the text style of placeholders in Chrome, Edge, and Safari.
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+
+// =============================================================================
+// Interactive
+// =============================================================================
+
+
+// Add the correct styles in Edge, IE, and Safari.
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}

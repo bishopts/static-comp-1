@@ -1,0 +1,88 @@
+// =============================================================================
+//
+// VARS.SCSS
+// ~~~ It's a variable party ~~~
+//
+// =============================================================================
+
+
+// =============================================================================
+// Colors
+// =============================================================================
+
+
+// Primary
+$primary100: rgb(188, 212, 250) !default;
+$primary200: rgb(171, 201, 248) !default;
+$primary300: rgb(155, 191, 247) !default;
+$primary400: rgb(138, 180, 245) !default;
+$primary500: rgb(121, 169, 244) !default;
+$primary600: rgb(106, 148, 214) !default;
+$primary700: rgb(91, 127, 183) !default;
+$primary800: rgb(76, 106, 153) !default;
+$primary900: rgb(61, 85, 122) !default;
+
+// Accent
+$accent100: rgb(228, 248, 216) !default;
+$accent200: rgb(216, 245, 198) !default;
+$accent300: rgb(204, 242, 179) !default;
+$accent400: rgb(191, 238, 161) !default;
+$accent500: rgb(179, 235, 143) !default;
+$accent600: rgb(157, 206, 125) !default;
+$accent700: rgb(134, 176, 107) !default;
+$accent800: rgb(112, 147, 89) !default;
+$accent900: rgb(90, 118, 72) !default;
+
+// Grayscale + White + Black
+$white: rgb(255, 255, 255) !default;
+$gray100: rgb(236, 236, 236) !default;
+$gray200: rgb(209, 209, 209) !default;
+$gray300: rgb(182, 182, 182) !default;
+$gray400: rgb(155, 155, 155) !default;
+$gray500: rgb(128, 128, 128) !default;
+$gray600: rgb(112, 112, 112) !default;
+$gray700: rgb(96, 96, 96) !default;
+$gray800: rgb(80, 80, 80) !default;
+$gray900: rgb(64, 64, 64) !default;
+$gray950: rgb(43, 43, 43) !default;
+$black: rgb(21, 21, 21) !default;
+
+// Background
+$background: $gray100 !default;
+
+// Surface
+$surface: rgb(255, 255, 255) !default;
+
+// Text
+$on-background: rgb(21, 21, 21) !default;
+$on-surface: rgb(21, 21, 21) !default;
+$on-primary: rgb(255, 255, 255) !default;
+$on-accent: rgb(255, 255, 255) !default;
+
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+
+// Font Weights
+$xbold: 700 !default;
+$bold: 600 !default;
+$regular: 400 !default;
+$lite: 300 !default;
+$xlite: 200 !default;
+
+// Font Stacks
+$font-stack-text: ('Raleway', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif) !default;
+
+
+// =============================================================================
+// Else
+// =============================================================================
+
+
+// Maximum width for container
+$max-width: 1180px !default;
+
+// Transitions
+$transition-default: all 100ms ease-in !default;

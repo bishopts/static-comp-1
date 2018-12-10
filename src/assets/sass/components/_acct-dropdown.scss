@@ -1,0 +1,25 @@
+.acct-dropdown {
+  cursor: pointer;
+
+  &:hover .acct-dropdown__username {
+    color: $primary200;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acct-dropdown__icon {
+  font-size: 2.5rem;
+}
+
+.acct-dropdown__username {
+  margin: 0 0.5rem;
+
+  color: $primary500;
+}
+
+.acct-dropdown__dropdown-caret {
+  margin-top: 5px;
+}

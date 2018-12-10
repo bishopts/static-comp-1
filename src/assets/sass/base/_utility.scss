@@ -1,0 +1,53 @@
+// =============================================================================
+// 
+// UTILITIES
+// ~~~ Very helpful class selectors for common needs ~~~
+//
+// =============================================================================
+
+
+// Clear Fix
+// =========
+// 1. The space content is one way to avoid an Opera bug when the
+//    `contenteditable` attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that receive the `clearfix` class.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+
+.cf::before,
+.cf::after {
+  display: table; // 2 //
+
+  content: ' '; // 1 //
+}
+
+.cf::after {
+  clear: both;
+}
+
+
+// Container 
+// =========
+// 1. For devices small than 400px
+
+.container {
+  position: relative;
+
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  // 1 //
+  @media (max-width: 400px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+
+// Italic
+// ======
+.italic {
+  font-style: italic;
+}

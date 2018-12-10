@@ -1,0 +1,104 @@
+// =============================================================================
+//
+// BASE.SCSS
+// ~~~ Snazzin' up the default element styles ~~~
+//
+// =============================================================================
+
+
+// =============================================================================
+// Lists
+// =============================================================================
+
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0; 
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+nav ul ul, {
+  margin: 0;
+  font-size: 100%;
+}
+
+nav li {
+  margin-bottom: 0;
+}
+
+
+// =============================================================================
+// Links
+// =============================================================================
+  
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $primary200;
+  }
+}
+
+::selection {
+  background: $accent400;
+}
+
+
+// =============================================================================
+// Forms
+// =============================================================================
+
+
+button,
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+textarea { 
+	min-height: 65px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+label,
+legend {
+	margin-bottom: 0.5rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}
